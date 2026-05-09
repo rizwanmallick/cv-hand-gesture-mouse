@@ -13,11 +13,14 @@ The system is built using Python, OpenCV, MediaPipe, and PyAutoGUI, and supports
 
 - Real-time hand tracking using webcam
 - AI-based hand landmark detection
-- Cursor movement using index finger
+- Cursor movement 
 - Left click gesture
 - Right click gesture
 - Screenshot capture gesture
 - Smooth mouse movement
+- Scroll up
+- Scroll down
+- drag
 - Volume Up gesture
 - Volume Down gesture
 - Media Play/Pause gesture
@@ -126,13 +129,19 @@ After running:
 
 | Gesture                  | Action           |
 | ------------------------ | ---------------- |
-| Index Finger Up          | Move Cursor      |
-| Thumb + Index Pinch      | Left Click       |
-| Middle Finger Gesture    | Right Click      |
-| Three Finger Gesture     | Screenshot       |
-| Finger Distance Increase | Volume Up        |
-| Finger Distance Decrease | Volume Down      |
-| Specific Media Gesture   | Play/Pause Media |
+| Index open + thumb open  | Move Cursor      |
+| Thumb + Index Pinch      | Right Click      |
+| Thumb + Middle Pinch     | Left Click       |
+| index open + middle open | Scroll up        |
+| half index + half middle | Scroll down      |
+| Thumb open + pinky open  | Screenshot       |
+| Thumb + ring pinch       | Drag             |
+
+Volume mode
+| All finger closed (hold 3 sec)  | Switch Mode      |
+| Thumb + Index Pinch(move up)    | Volume Up        |
+| Thumb + Index Pinch(move down)  | Volume Down      |
+| index open + middle open        | Play/Pause Media |
 
 ---
 
@@ -192,55 +201,6 @@ PyAutoGUI and system control functions perform:
 * Volume changes
 * Media play/pause actions
 
----
-
-# 📸 Screenshots
-
-## Hand Tracking
-
-Add image:
-
-```bash
-assets/screenshots/hand_tracking.png
-```
-
----
-
-## Cursor Movement
-
-Add image:
-
-```bash
-assets/screenshots/cursor_control.png
-```
-
----
-
-## Volume Control
-
-Add image:
-
-```bash
-assets/screenshots/volume_control.png
-```
-
----
-
-# 🎥 Demo
-
-Add demo GIF:
-
-```bash
-assets/demo.gif
-```
-
-Then display:
-
-```md
-![Demo](assets/demo.gif)
-```
-
----
 
 # 🔥 Key Concepts Used
 
